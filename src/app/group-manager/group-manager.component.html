@@ -1,0 +1,16 @@
+<p>group-manager works!</p>
+<!--<h2>{{group.name | uppercase}} Details</h2>-->
+<!--<div><span>id: </span>{{group.group_id}}</div>-->
+<!--<div><span>name: </span>{{group.name}}</div>-->
+<li *ngFor="let gr of groups.values()">
+  <app-group-detail [_group]="gr"></app-group-detail>
+<!--  <div><span>id: </span>{{gr.group_id}}</div>-->
+<!--  <div><span>name: </span>{{gr.name}}</div>-->
+<!--  <div>-->
+<!--    <label for='${gr.group_id}'>Group's name</label><br>-->
+<!--    <input id='${gr.group_id}'-->
+<!--           (change)="onSelect(gr)"-->
+<!--           placeholder="name">-->
+<!--  </div>-->
+<!--  <button type="button" (click)="onSelect(gr)" >Increase id</button>-->
+</li>

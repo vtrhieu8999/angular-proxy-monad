@@ -1,0 +1,10 @@
+<p>group-detail works!</p>
+<ul class="groups">
+    <div><span>id: </span>{{group.group_id}}</div>
+    <div><span>name: </span>{{group.name}}</div>
+    <div>
+      <label for=`${group.group_id}`>Group's name</label><br>
+      <input id=`${group.group_id}` placeholder="name" [(ngModel)]="group.name">
+    </div>
+    <button type="button" (click)="delete()">Delete</button>
+</ul>
